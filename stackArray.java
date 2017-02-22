@@ -24,6 +24,7 @@ public class StackArray {
 	{
 		if(top==max-1)
 		{
+			int count = 0;
 			max = max * 2;
 			Person tempArray[] = new Person[max];
 			Person tempArray2[] = new Person[max];
@@ -31,7 +32,13 @@ public class StackArray {
 			{
 				tempArray[i] = this.pop();
 			}
-			this = tempArray;
+			for(int j=max;j>0;j--)
+			{
+				tempArray2[count] = tempArray[j];
+				count++;
+			}
+			
+			
 		}
 		else
 		{
@@ -41,5 +48,12 @@ public class StackArray {
 	public Person pop()
 	{
 		return stackArray[top--];
+	}
+	public String toString()
+	{
+		String aString = "";
+		for (int i=0; i<max; i++)
+			aString += stackArray[i] + "\n";
+		return aString;
 	}
 }
