@@ -31,7 +31,7 @@ public class StackArrayApp {
 		DataReader obj = new DataReader(fileName, myList);
 		Person aaa = new Person();
 		aaa.toString();
-		//Data
+	
 		
 
 	}
