@@ -15,7 +15,7 @@ public class StackArray {
 	{
 		for(int i = 0; i<num-1; i++)
 		{
-			stackArray[i]=new Person();
+			stackArray[i]=new Person(); //load array with accurate number of person
 		}
 	}
 	
@@ -25,7 +25,7 @@ public class StackArray {
 	}
 	public boolean isFull()
 	{
-		return false;
+		return false; //will never be true, always growing
 	}
 	public void push(Person obj)
 	{
@@ -34,8 +34,8 @@ public class StackArray {
 			int topHold = top;
 			int count = 0;
 			max = max * 2;
-			Person tempArray[] = new Person[max/2];
-			Person tempArray2[] = new Person[max/2];
+			Person tempArray[] = new Person[max/2];  //The array is half full of nothing, don't search that
+			Person tempArray2[] = new Person[max/2];  //The array is half full of nothing, don't search that
 			for(int i=0;i<(max/2);i++)
 			{
 				tempArray[i] = this.pop();
