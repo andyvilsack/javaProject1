@@ -8,6 +8,7 @@ public class Person {
 	//constructors 
 	Person()
 	{
+		System.out.println("DEBUG: Made it to Person.java");
 		firstName="FirstName";
 		lastName="LastName";
 		age=99;

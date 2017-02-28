@@ -27,8 +27,10 @@ public class StackArrayApp {
 		System.out.println("Enter the name of the file");
 		Scanner scanner = new Scanner(System.in);
 		String fileName = scanner.nextLine();
-		DataReader(fileName, myList);
 		
+		DataReader obj = new DataReader(fileName, myList);
+		Person aaa = new Person();
+		aaa.toString();
 		//Data
 		
 

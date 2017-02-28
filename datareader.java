@@ -26,6 +26,7 @@ public class DataReader {
 					age = src.nextInt();
 					gpa = src.nextDouble();
 					/* save the values in the array as an object */
+					System.out.println("DEBUG: Made it to DataReader.java");
 					aList.push(new Person(firstName, lastName, age, gpa));
 				}
 			}
