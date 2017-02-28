@@ -29,6 +29,7 @@ public class StackArray {
 	}
 	public void push(Person obj)
 	{
+		//System.out.println("DEBUG: Hit the push");
 		if(top==max-1)
 		{
 			int topHold = top;
@@ -75,8 +76,10 @@ public class StackArray {
 	public String toString()
 	{
 		String aString = "";
-		for (int i=0; i<max; i++)
+		for (int i=0; i<max; i++) {
 			aString += stackArray[i] + "\n";
+			//System.out.println(aString);
+		}
 		return aString;
 	}
 }

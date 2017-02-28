@@ -26,11 +26,14 @@ public class DataReader {
 					age = src.nextInt();
 					gpa = src.nextDouble();
 					/* save the values in the array as an object */
-					System.out.println("DEBUG: Made it to DataReader.java");
+					//System.out.println("DEBUG: Made it to DataReader.java");
 					
+			
 					aList.push(new Person(firstName, lastName, age, gpa)); //TODO: I think our issue is here. Nothing is being push.
 					
-					System.out.println("DEBUG: Made it past aList.push");
+					
+					
+					//System.out.println("DEBUG: Made it past aList.push");
 				}
 			}
 			catch(FileNotFoundException ex)

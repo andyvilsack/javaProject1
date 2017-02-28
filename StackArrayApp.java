@@ -29,8 +29,9 @@ public class StackArrayApp {
 		String fileName = scanner.nextLine();
 		
 		DataReader obj = new DataReader(fileName, myList);
-		Person aaa = new Person();
-		aaa.toString();
+		
+		StackArray aaa = new StackArray();
+		System.out.println(myList);
 	
 		
 
