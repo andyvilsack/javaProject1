@@ -15,10 +15,19 @@ public class StackArrayApp {
 		DataReader obj = new DataReader(fileName, myList);
 		
 		StackArray aaa = new StackArray();
-		System.out.println(myList);
-		aaa.pop();
-	
 		
+		System.out.println(myList);
+		
+//		System.out.println(myList.pop());
+//		System.out.println(myList.pop());
 
+		System.out.println("---");
+		StackArray newStack = new StackArray();
+		System.out.println(newStack);
+		//Person v = myList.pop();
+		newStack.push(myList.pop());
+		System.out.println("---");
+		System.out.println(newStack);
 	}
 }
+
