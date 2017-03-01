@@ -29,7 +29,7 @@ public class DataReader {
 					//System.out.println("DEBUG: Made it to DataReader.java");
 					
 			
-					aList.push(new Person(firstName, lastName, age, gpa)); //TODO: I think our issue is here. Nothing is being push.
+					aList.push(new Person(firstName, lastName, age, gpa)); 
 					
 					
 					

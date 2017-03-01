@@ -3,7 +3,7 @@ public class StackArrayApp {
 
 	public static void main(String[] args)
 	{
-		
+		int counter = 0;
 		StackArray myList = new StackArray();
 		String fileName = "data1.txt";
 		DataReader obj = new DataReader(fileName, myList);
@@ -16,6 +16,7 @@ public class StackArrayApp {
 		
 		System.out.println("\nList 1 after pops");
 		System.out.println(myList);
+
 
 		fileName = "data2.txt";
 		obj = new DataReader(fileName, myList);
@@ -32,12 +33,23 @@ public class StackArrayApp {
 		System.out.println(myList);
 		
 		StackArray newStack = new StackArray();
-		if(myList.isEmpty() != false) {
-			//newStack.push(myList.pop());
-			//System.out.println("boo");
+		boolean hasMoreData = true;
+		
+		System.out.println(myList.isEmpty());
+		
+		while (hasMoreData == true) {
+			if(myList.isEmpty() == false) {
+				newStack.push(myList.pop());
+				counter++;
+			}
+			else {
+				hasMoreData = false;
+			}
 		}
 
-
+		System.out.println("\nnewStack:");
+		System.out.println(newStack);
+		System.out.println(counter);
 
 //		System.out.println("---");
 //		StackArray newStack = new StackArray();
