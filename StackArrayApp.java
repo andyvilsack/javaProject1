@@ -7,9 +7,10 @@ public class StackArrayApp {
 		String fileName = "data1.txt";
 		DataReader obj = new DataReader(fileName, myList);
 		
-
+		System.out.println("data1.txt");
 		System.out.println(myList);
 		
+		System.out.println("data1.txt popped");
 		System.out.println(myList.pop());
 		System.out.println(myList.pop());
 		
@@ -19,8 +20,10 @@ public class StackArrayApp {
 		fileName = "data2.txt";
 		obj = new DataReader(fileName, myList);
 		
+		System.out.println("data2.txt");
 		System.out.println(myList);
 
+		System.out.println("data2.txt popped");
 		System.out.println(myList.pop());
 		System.out.println(myList.pop());
 		System.out.println(myList.pop());
@@ -30,8 +33,9 @@ public class StackArrayApp {
 		System.out.println("\n");
 		
 		StackArray newStack = new StackArray();
-		
+		System.out.print("myList is empty:");
 		System.out.println(myList.isEmpty());
+		System.out.print("newStack is empty:");
 		System.out.println(newStack.isEmpty());
 		
 		boolean hasMoreData = true;
