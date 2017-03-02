@@ -17,18 +17,21 @@ public class DataReader {
 				
 				/* open the file and initialize a Scanner */
 				File file = new File(fileName); 
+				//System.out.println(fileName); //debug
 				Scanner src = new Scanner(file).useDelimiter(",|\r\n|\n");
 
 				while(src.hasNext())
 				{
 					lastName = src.next();
+					//System.out.println(lastName); //debug
 					firstName = src.next();
+					//System.out.println(firstName); //debug
 					age = src.nextInt();
 					gpa = src.nextDouble();
 					/* save the values in the array as an object */
 					//System.out.println("DEBUG: Made it to DataReader.java");
-					
-			
+	
+				
 					aList.push(new Person(firstName, lastName, age, gpa)); 
 					
 					
@@ -46,7 +49,7 @@ public class DataReader {
 			}
 			catch(ArrayIndexOutOfBoundsException ex)
 			{
-				System.err.println("Too many data values");
+				//System.err.println("Too many data values");
 			}
 			catch(NoSuchElementException ex)
 			{

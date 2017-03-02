@@ -71,7 +71,7 @@ public class StackArray {
 	}
 	public Person pop()
 	{
-		return stackArray[top--]; //TODO: Elements have to be removed?
+		return stackArray[top--];
 	}
 	public String toString()
 	{

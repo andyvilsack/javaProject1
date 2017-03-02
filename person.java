@@ -17,7 +17,9 @@ public class Person {
 	Person(String fn, String ln, int yrs, double score)
 	{
 		firstName = fn;
+		//System.out.println(firstName); //debug
 		lastName = ln;
+		//System.out.println(lastName); //debug
 		age = yrs;
 		gpa = score;
 	}
