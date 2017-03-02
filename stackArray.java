@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.*;
+
 public class StackArray {
 	public static final int STARTMAX = 2;
 	private Person stackArray[] = new Person[STARTMAX];
@@ -29,6 +31,7 @@ public class StackArray {
 	}
 	public void push(Person obj)
 	{
+		//System.out.println(top);
 		//System.out.println("DEBUG: Hit the push");
 		if(top==max-1)
 		{
@@ -71,7 +74,13 @@ public class StackArray {
 	}
 	public Person pop()
 	{
-		return stackArray[top--];
+		if(top == -1) {
+		
+			return stackArray[top];
+		}
+		else {
+			return stackArray[top--];
+		}
 	}
 	public String toString()
 	{

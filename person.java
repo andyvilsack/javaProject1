@@ -25,7 +25,8 @@ public class Person {
 	}
 	public String toString()
 	{
-		String print = firstName + " " + lastName + " " + age + " " + gpa;
+		String print = age + " " + gpa + " " + firstName + " " + lastName;
+		//String print = firstName + " " + lastName + " " + age + " " + gpa;
 		return print; 
 	}
 	String getlastName() 
