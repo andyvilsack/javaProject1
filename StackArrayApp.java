@@ -41,10 +41,11 @@ public class StackArrayApp {
 		System.out.println("remaining on first stack");
 		System.out.println("remaining on second stack");
 
-//		while(myList.isEmpty() == false) {
-//			tempStack.push(myList.pop()); //pops values from myList to tempStack (objects are in reverse order)
-//			myListCopy.push(tempStack.pop());
-//		}
+		while(myList.isEmpty() == false) {
+			tempStack.push(myList.pop()); //pops values from myList to tempStack (objects are in reverse order)
+			myListCopy.push(tempStack.pop());
+		}
+		
 		
 		while(myList.isEmpty() == false) {
 			System.out.println(myList.pop());
@@ -56,7 +57,6 @@ public class StackArrayApp {
 		obj = new DataReader(fileName, myListCopy);
 	
 		
-		System.out.println("\nmyListCopy:");
 		while(myListCopy.isEmpty() == false) {
 			System.out.println(myListCopy.pop());
 		}
