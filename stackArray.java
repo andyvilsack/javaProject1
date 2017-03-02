@@ -74,6 +74,7 @@ public class StackArray {
 	}
 	public Person pop()
 	{
+		
 		if(top == -1) {
 			return stackArray[top];
 			//1throw new EmptyStackException();
