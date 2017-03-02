@@ -42,32 +42,17 @@ public class StackArrayApp {
 		System.out.println("remaining on second stack");
 
 		
-		while (hasMoreData == true) { //pop remaining values off myList and push them on tempStack
-			if(myList.isEmpty() == false) {
-				tempStack.push(myList.pop());
-			}
-			else {
-				hasMoreData = false;
-			}
-		}
 		
-		while (x == true) { //pop values off tempStack and push them on myList
-			if(tempStack.isEmpty() == false) {
-				myListCopy.push(tempStack.pop());
-				//myList.push(tempStack.pop()); //reloads original stack with values in correct order
-			}
-			else {
-				x = false;
-			}
-		}
 		
+		
+				
 		//-------------DATA 3
-				fileName = "data3.txt";
-				obj = new DataReader(fileName, myListCopy);
-					
-				while(myListCopy.isEmpty() == false) {
-					System.out.println(myListCopy.pop());
-				}
+		fileName = "data3.txt";
+		obj = new DataReader(fileName, myListCopy);
+		
+		while(myListCopy.isEmpty() == false) {
+			System.out.println(myListCopy.pop());
+		}
 		
 	}
 }
