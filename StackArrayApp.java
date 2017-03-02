@@ -79,11 +79,21 @@ public class StackArrayApp {
 		System.out.println("\ntempStack:");
 		System.out.println(tempStack);
 		
+					
+	
+		
+		
+		fileName = "data3.txt";
+		obj = new DataReader(fileName, myListCopy);
+		
 		System.out.println("\nmyListCopy:");
-		System.out.println(myListCopy);
-		
-		
-			System.out.print("myList is empty:");
+			System.out.println(myListCopy);
+			
+			while(myListCopy.isEmpty() == false) {
+				System.out.println(myListCopy.pop());
+			}
+			
+			System.out.print("\nmyList is empty:");
 			System.out.println(myList.isEmpty());
 			System.out.print("tempStack is empty:");
 			System.out.println(tempStack.isEmpty());
