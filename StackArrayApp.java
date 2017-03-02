@@ -6,8 +6,6 @@ public class StackArrayApp {
 		StackArray myList = new StackArray();
 		StackArray tempStack = new StackArray();
 		StackArray myListCopy = new StackArray();
-		boolean hasMoreData = true;
-		boolean x = true;
 		
 		//-------------DATA 1
 		String fileName = "data1.txt";
@@ -47,15 +45,13 @@ public class StackArrayApp {
 		}
 		
 		
-		while(myList.isEmpty() == false) {
+		while(myList.isEmpty() == false) { //Prints the popped values from myList
 			System.out.println(myList.pop());
 		}
 		
-				
 		//-------------DATA 3
 		fileName = "data3.txt";
 		obj = new DataReader(fileName, myListCopy);
-	
 		
 		while(myListCopy.isEmpty() == false) {
 			System.out.println(myListCopy.pop());

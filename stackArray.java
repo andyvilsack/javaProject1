@@ -17,7 +17,7 @@ public class StackArray {
 	{
 		for(int i = 0; i<num-1; i++)
 		{
-			stackArray[i]=new Person(); //load array with accurate number of person
+			stackArray[i]=new Person();
 		}
 	}
 	
@@ -31,8 +31,6 @@ public class StackArray {
 	}
 	public void push(Person obj)
 	{
-		//System.out.println(top);
-		//System.out.println("DEBUG: Hit the push");
 		if(top==max-1)
 		{
 			int topHold = top;
@@ -74,7 +72,6 @@ public class StackArray {
 	}
 	public Person pop()
 	{
-		
 		if(top == -1) {
 			return stackArray[top];
 			//1throw new EmptyStackException();
@@ -89,7 +86,6 @@ public class StackArray {
 		String aString = "";
 		for (int i=0; i<max; i++) {
 			aString += stackArray[i] + "\n";
-			//System.out.println(aString);
 		}
 		return aString;
 	}

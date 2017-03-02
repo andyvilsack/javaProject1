@@ -8,7 +8,6 @@ public class Person {
 	//constructors 
 	Person()
 	{
-		//System.out.println("DEBUG: Made it to Person.java");
 		firstName="FirstName";
 		lastName="LastName";
 		age=99;
@@ -17,16 +16,13 @@ public class Person {
 	Person(String fn, String ln, int yrs, double score)
 	{
 		firstName = fn;
-		//System.out.println(firstName); //debug
 		lastName = ln;
-		//System.out.println(lastName); //debug
 		age = yrs;
 		gpa = score;
 	}
 	public String toString()
 	{
 		String print = age + " " + gpa + " " + firstName + " " + lastName;
-		//String print = firstName + " " + lastName + " " + age + " " + gpa;
 		return print; 
 	}
 	String getlastName() 
