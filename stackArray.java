@@ -96,4 +96,8 @@ public class StackArray {
 		}
 		return aString;
 	}
+	
+	public int size() {
+		return stackArray.length;
+	}
 }
