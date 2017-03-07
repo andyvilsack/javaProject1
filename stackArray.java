@@ -13,12 +13,19 @@ public class StackArray {
 		stackArray[0]=new Person();
 		stackArray[1]=new Person();
 	}
-	StackArray(int num)
+	StackArray(int size)
 	{
-		for(int i = 0; i<num-1; i++)
+		for(int i = 0; i<size-1; i++)
 		{
 			stackArray[i]=new Person();
 		}
+	}
+	StackArray(StackArray s)
+	{
+		this.stackArray = new Person[s.top];
+		this.top = s.top;
+		this.max = s.max;
+		
 	}
 	//checks to see if stack is empty
 	public boolean isEmpty()
